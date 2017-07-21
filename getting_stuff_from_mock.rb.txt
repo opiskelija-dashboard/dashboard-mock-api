@@ -1,0 +1,19 @@
+# Make sure this returns 'true'
+# If false, make sure you don't have any other libraries overwriting it like gem 'httparty'
+require 'net/http'
+
+uri = URI.parse("http://example.org")
+
+http = Net::HTTP.new(uri.host, uri.port)
+
+request = Net::HTTP::Get.new(uri.request_uri)
+
+response = http.request(request)
+
+# render won't work on console, do this instead:
+# hash = JSON.parse response.body
+render :json => response.body
+
+
+Now you can get stuff out with for example with cmd: 
+hash[0]["awarded_point]
