@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :points
   resources :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get "/api/v8/courses/:course_id/users/:user_id/points", to: 'points#index'
 end
