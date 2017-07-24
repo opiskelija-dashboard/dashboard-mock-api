@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170720084348) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "points", force: :cascade do |t|
     t.integer  "exercise_id"
     t.integer  "point_id"
