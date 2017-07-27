@@ -868,3 +868,83 @@ Processing by PointsController#index as HTML
 Completed 200 OK in 23ms (Views: 12.6ms | ActiveRecord: 2.7ms)
 
 
+  [1m[35m (19.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (25.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePoints (20170720084348)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "exercise_id" integer, "point_id" integer, "course_id" integer, "user_id" integer, "submission_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170720084348"]]
+  [1m[35m (22.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateSubmissions (20170727092145)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "pretest_error" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "exercise_name" varchar, "course_id" integer, "processed" boolean, "all_tests_passed" boolean, "points" text, "processing_tried_at" datetime, "processing_began_at" datetime, "processing_completed_at" datetime, "times_sent_to_sandbox" integer, "processing_attempts_started_at" datetime, "params_json" text, "requires_review" boolean, "requests_review" boolean, "reviewed" boolean, "message_for_reviewer" text, "newer_submission_reviewed" boolean, "review_dismissed" boolean, "paste_available" boolean, "message_for_paste" text, "paste_key" varchar)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170727092145"]]
+  [1m[35m (15.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-07-27 10:53:35.368744"], ["updated_at", "2017-07-27 10:53:35.368744"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2017-07-27 14:34:32 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.4/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/points" for 127.0.0.1 at 2017-07-27 14:34:37 +0300
+Processing by PointsController#index as HTML
+  [1m[36mPoint Load (0.4ms)[0m  [1m[34mSELECT "points".* FROM "points"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/submissions" for 127.0.0.1 at 2017-07-27 14:34:51 +0300
+  
+SyntaxError (/home/ritakosk/odash/dashboard-mock-api/app/controllers/submissions_controller.rb:6: `@:' is not allowed as an instance variable name
+/home/ritakosk/odash/dashboard-mock-api/app/controllers/submissions_controller.rb:6: syntax error, unexpected end-of-input
+    @::submissions = ::Submission.all
+     ^):
+  
+app/controllers/submissions_controller.rb:6: `@:' is not allowed as an instance variable name
+app/controllers/submissions_controller.rb:6: syntax error, unexpected end-of-input
+Started GET "/submissions" for 127.0.0.1 at 2017-07-27 14:36:30 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SubmissionsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant Submission, expected /home/ritakosk/odash/dashboard-mock-api/app/models/submission.rb to define it):
+  
+app/controllers/submissions_controller.rb:6:in `index'
+Started GET "/submissions" for 127.0.0.1 at 2017-07-27 14:37:27 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SubmissionsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant Submission, expected /home/ritakosk/odash/dashboard-mock-api/app/models/submission.rb to define it):
+  
+app/controllers/submissions_controller.rb:6:in `index'
+Started GET "/submissions" for 127.0.0.1 at 2017-07-27 14:39:39 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SubmissionsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant Submission, expected /home/ritakosk/odash/dashboard-mock-api/app/models/submission.rb to define it):
+  
+app/controllers/submissions_controller.rb:6:in `index'
+Started GET "/submissions" for 127.0.0.1 at 2017-07-27 14:41:55 +0300
+Processing by SubmissionsController#index as HTML
+  [1m[36mSubmission Load (0.3ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.8ms)
+
+

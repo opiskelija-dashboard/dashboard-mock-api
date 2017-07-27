@@ -10,10 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170720084348) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 20170727092145) do
 
   create_table "points", force: :cascade do |t|
     t.integer  "exercise_id"
@@ -24,6 +21,33 @@ ActiveRecord::Schema.define(version: 20170720084348) do
     t.string   "name"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "submissions", force: :cascade do |t|
+    t.integer  "user_id"
+    t.text     "pretest_error"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.string   "exercise_name"
+    t.integer  "course_id"
+    t.boolean  "processed"
+    t.boolean  "all_tests_passed"
+    t.text     "points"
+    t.datetime "processing_tried_at"
+    t.datetime "processing_began_at"
+    t.datetime "processing_completed_at"
+    t.integer  "times_sent_to_sandbox"
+    t.datetime "processing_attempts_started_at"
+    t.text     "params_json"
+    t.boolean  "requires_review"
+    t.boolean  "requests_review"
+    t.boolean  "reviewed"
+    t.text     "message_for_reviewer"
+    t.boolean  "newer_submission_reviewed"
+    t.boolean  "review_dismissed"
+    t.boolean  "paste_available"
+    t.text     "message_for_paste"
+    t.string   "paste_key"
   end
 
 end
