@@ -1,3 +1,3 @@
-class PointSerializer < ActiveModel::Serializer
+class SubmissionSerializer < ActiveModel::Serializer
   attributes :submission, :created_at
 end
