@@ -1,7 +1,7 @@
 class CreateSubmissions < ActiveRecord::Migration[5.0]
   def change
     create_table :submissions do |t|
-      t.integer  :submission_id
+      t.integer  :id
       t.integer  :user_id
       t.text     :pretest_error
       t.datetime :created_at
