@@ -2234,3 +2234,12 @@ No serializer found for resource: #<Submission id: 1, user_id: nil, pretest_erro
 Completed 200 OK in 50ms (Views: 44.6ms | ActiveRecord: 2.4ms)
 
 
+Started GET "/submissions" for 127.0.0.1 at 2017-07-31 14:06:35 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SubmissionsController#index as HTML
+  [1m[36mSubmission Load (0.2ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+No serializer found for resource: #<Submission id: 1, user_id: nil, pretest_error: nil, created_at: "2017-07-31 10:50:04", updated_at: "2017-07-31 10:50:04", exercise_name: nil, course_id: nil, processed: nil, all_tests_passed: nil, points: nil, processing_tried_at: nil, processing_began_at: nil, processing_completed_at: nil, times_sent_to_sandbox: nil, processing_attempts_started_at: nil, params_json: nil, requires_review: nil, requests_review: nil, reviewed: nil, message_for_reviewer: nil, newer_submission_reviewed: nil, review_dismissed: nil, paste_available: nil, message_for_paste: nil, paste_key: nil, submission_id: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Submission::ActiveRecord_Relation (3.43ms)
+Completed 200 OK in 37ms (Views: 32.6ms | ActiveRecord: 1.0ms)
+
+
