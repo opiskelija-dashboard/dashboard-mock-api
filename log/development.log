@@ -1991,3 +1991,12 @@ No serializer found for resource: #<Submission id: 1, user_id: 15653, pretest_er
 Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/submissions" for 127.0.0.1 at 2017-07-31 12:09:26 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SubmissionsController#index as HTML
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+No serializer found for resource: #<Submission id: 1, user_id: 15653, pretest_error: nil, created_at: "2017-07-20 07:29:01", updated_at: "2017-07-28 10:22:20", exercise_name: "osa08-Osa08_08.TavaroitaJaLaatikoita", course_id: 214, processed: true, all_tests_passed: true, points: "08-08.1 08-08.2 08-08.3", processing_tried_at: "2017-07-20 07:29:01", processing_began_at: "2017-07-20 07:29:02", processing_completed_at: "2017-07-20 07:29:17", times_sent_to_sandbox: 1, processing_attempts_started_at: "2017-07-20 07:29:01", params_json: "{\"error_msg_locale\":\"fi\"}", requires_review: false, requests_review: false, reviewed: false, message_for_reviewer: "", newer_submission_reviewed: false, review_dismissed: false, paste_available: false, message_for_paste: "", paste_key: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Submission::ActiveRecord_Relation (8.81ms)
+Completed 200 OK in 44ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
