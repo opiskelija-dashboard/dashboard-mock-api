@@ -1,6 +1,7 @@
 class Submission < ApplicationRecord
   def submission
     hash = {}
+    hash[:submission_id] = self.submission_id
     hash[:user_id] = self.user_id
     hash[:pretest_error] = self.pretest_error
     hash[:created_at] = self.created_at

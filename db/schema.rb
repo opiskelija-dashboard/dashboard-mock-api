@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170727092145) do
+ActiveRecord::Schema.define(version: 20170731105120) do
 
   create_table "points", force: :cascade do |t|
     t.integer  "exercise_id"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20170727092145) do
     t.boolean  "paste_available"
     t.text     "message_for_paste"
     t.string   "paste_key"
+    t.integer  "submission_id"
   end
 
 end
