@@ -204,7 +204,7 @@ Point.create(exercise_id: 7, point_id: 21, course_id: 1, user_id: 1, submission_
 
 Point.create(exercise_id: 7, point_id: 22, course_id: 1, user_id: 1, submission_id: 17, name: "08-07.3")
 
-Point.create(exercise_id: 7, point_id: 22, course_id: 1, user_id: 1, submission_id: 17, name: "08-07.4")
+Point.create(exercise_id: 7, point_id: 23, course_id: 1, user_id: 1, submission_id: 17, name: "08-07.4")
 
 Submission.create(submission_id: 18, user_id: 15653, created_at: "2017-08-13T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
@@ -215,7 +215,7 @@ Submission.create(submission_id: 18, user_id: 15653, created_at: "2017-08-13T10:
   reviewed: false, message_for_reviewer: "", newer_submission_reviewed: false, review_dismissed: false,
   paste_available: false, message_for_paste: "")
 
-Point.create(exercise_id: 8, point_id: 23, course_id: 1, user_id: 1, submission_id: 18, name: "08-08.1")
+Point.create(exercise_id: 8, point_id: 24, course_id: 1, user_id: 1, submission_id: 18, name: "08-08.1")
 
 Submission.create(submission_id: 19, user_id: 15653, created_at: "2017-08-15T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
@@ -226,7 +226,7 @@ Submission.create(submission_id: 19, user_id: 15653, created_at: "2017-08-15T10:
   reviewed: false, message_for_reviewer: "", newer_submission_reviewed: false, review_dismissed: false,
   paste_available: false, message_for_paste: "")
 
-Point.create(exercise_id: 8, point_id: 24, course_id: 1, user_id: 1, submission_id: 19, name: "08-08.2")
+Point.create(exercise_id: 8, point_id: 25, course_id: 1, user_id: 1, submission_id: 19, name: "08-08.2")
 
 Submission.create(submission_id: 20, user_id: 15653, created_at: "2017-08-16T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
@@ -237,4 +237,4 @@ Submission.create(submission_id: 20, user_id: 15653, created_at: "2017-08-16T10:
   reviewed: false, message_for_reviewer: "", newer_submission_reviewed: false, review_dismissed: false,
   paste_available: false, message_for_paste: "")
 
-Point.create(exercise_id: 8, point_id: 25, course_id: 1, user_id: 1, submission_id: 20, name: "08-08.3")
+Point.create(exercise_id: 8, point_id: 26, course_id: 1, user_id: 1, submission_id: 20, name: "08-08.3")
