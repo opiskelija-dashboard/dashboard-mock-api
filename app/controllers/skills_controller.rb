@@ -1,4 +1,4 @@
-class SkillDataController < ApplicationController
+class SkillsController < ApplicationController
   
   def index
     render json: [{"label": "for", "user": 50, "average": 60},

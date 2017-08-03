@@ -3199,3 +3199,507 @@ No serializer found for resource: {:label=>"for", :user=>50, :average=>60}
 Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/cumulative-points" for 127.0.0.1 at 2017-08-03 13:17:35 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/cumulative-points"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/skill-data" for 127.0.0.1 at 2017-08-03 13:18:53 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/skill-data"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/skill_data" for 127.0.0.1 at 2017-08-03 13:19:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/skill_data"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/points" for 127.0.0.1 at 2017-08-03 13:19:21 +0300
+Processing by PointsController#index as HTML
+  [1m[36mPoint Load (0.9ms)[0m  [1m[34mSELECT "points".* FROM "points"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.45ms)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/skill-data" for 127.0.0.1 at 2017-08-03 13:19:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/skill-data"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/skill_data" for 127.0.0.1 at 2017-08-03 13:19:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/skill_data"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/skill_data" for 127.0.0.1 at 2017-08-03 14:09:15 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/skill_data"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/skills" for 127.0.0.1 at 2017-08-03 14:09:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/skills"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/skills" for 127.0.0.1 at 2017-08-03 14:10:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/skills"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/skills" for 127.0.0.1 at 2017-08-03 14:11:18 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SkillsController#index as HTML
+No serializer found for resource: {:label=>"for", :user=>50, :average=>60}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.53ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/skills" for 127.0.0.1 at 2017-08-03 14:11:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/skills"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/skills" for 127.0.0.1 at 2017-08-03 14:12:25 +0300
+Processing by SkillsController#index as HTML
+No serializer found for resource: {:label=>"for", :user=>50, :average=>60}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.14ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (23.6ms)[0m  [1m[35mCREATE TABLE "exercises" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (27.5ms)[0m  [1m[35mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "exercise_id" integer, "point_id" integer, "course_id" integer, "user_id" integer, "submission_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (25.8ms)[0m  [1m[35mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "pretest_error" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "exercise_name" varchar, "course_id" integer, "processed" boolean, "all_tests_passed" boolean, "points" text, "processing_tried_at" datetime, "processing_began_at" datetime, "processing_completed_at" datetime, "times_sent_to_sandbox" integer, "processing_attempts_started_at" datetime, "params_json" text, "requires_review" boolean, "requests_review" boolean, "reviewed" boolean, "message_for_reviewer" text, "newer_submission_reviewed" boolean, "review_dismissed" boolean, "paste_available" boolean, "message_for_paste" text, "paste_key" varchar, "submission_id" integer)[0m
+  [1m[35m (19.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (12.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170803094423)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (16.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170720084348),
+(20170727092145);
+
+[0m
+  [1m[35m (25.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-03 11:14:13.688127"], ["updated_at", "2017-08-03 11:14:13.688127"]]
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (18.9ms)[0m  [1m[35mCREATE TABLE "exercises" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "exercise_id" integer, "point_id" integer, "course_id" integer, "user_id" integer, "submission_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (22.0ms)[0m  [1m[35mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "pretest_error" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "exercise_name" varchar, "course_id" integer, "processed" boolean, "all_tests_passed" boolean, "points" text, "processing_tried_at" datetime, "processing_began_at" datetime, "processing_completed_at" datetime, "times_sent_to_sandbox" integer, "processing_attempts_started_at" datetime, "params_json" text, "requires_review" boolean, "requests_review" boolean, "reviewed" boolean, "message_for_reviewer" text, "newer_submission_reviewed" boolean, "review_dismissed" boolean, "paste_available" boolean, "message_for_paste" text, "paste_key" varchar, "submission_id" integer)[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (7.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170803094423)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (17.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170720084348),
+(20170727092145);
+
+[0m
+  [1m[35m (25.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-03 11:14:13.866057"], ["updated_at", "2017-08-03 11:14:13.866057"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-20 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:13.897257"], ["exercise_name", "osa08-Osa08_08.TavaroitaJaLaatikoita"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.1 08-08.2 08-08.3"], ["processing_tried_at", "2017-07-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-07-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 1]]
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 1], ["course_id", 1], ["user_id", 1], ["submission_id", 1], ["name", "08-08.1"], ["created_at", "2017-08-03 11:14:13.920574"], ["updated_at", "2017-08-03 11:14:13.920574"]]
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 2], ["course_id", 1], ["user_id", 1], ["submission_id", 1], ["name", "08-08.2"], ["created_at", "2017-08-03 11:14:13.939933"], ["updated_at", "2017-08-03 11:14:13.939933"]]
+  [1m[35m (22.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 3], ["course_id", 1], ["user_id", 1], ["submission_id", 1], ["name", "08-08.3"], ["created_at", "2017-08-03 11:14:13.966465"], ["updated_at", "2017-08-03 11:14:13.966465"]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-21 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:13.984073"], ["exercise_name", "osa333"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.4"], ["processing_tried_at", "2017-07-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-07-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 2]]
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 4], ["course_id", 1], ["user_id", 1], ["submission_id", 2], ["name", "08-08.4"], ["created_at", "2017-08-03 11:14:14.001385"], ["updated_at", "2017-08-03 11:14:14.001385"]]
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-22 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.018626"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 3]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 5], ["course_id", 1], ["user_id", 1], ["submission_id", 3], ["name", "08-08.5"], ["created_at", "2017-08-03 11:14:14.030826"], ["updated_at", "2017-08-03 11:14:14.030826"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-23 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.042300"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.56"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 4]]
+  [1m[35m (16.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 6], ["course_id", 1], ["user_id", 1], ["submission_id", 4], ["name", "08-08.56"], ["created_at", "2017-08-03 11:14:14.062948"], ["updated_at", "2017-08-03 11:14:14.062948"]]
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-25 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.079120"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.45"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 5]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 7], ["course_id", 1], ["user_id", 1], ["submission_id", 5], ["name", "08-08.45"], ["created_at", "2017-08-03 11:14:14.093704"], ["updated_at", "2017-08-03 11:14:14.093704"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-24 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.104645"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 6]]
+  [1m[35m (20.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 8], ["course_id", 1], ["user_id", 1], ["submission_id", 6], ["name", "08-08.5345"], ["created_at", "2017-08-03 11:14:14.129684"], ["updated_at", "2017-08-03 11:14:14.129684"]]
+  [1m[35m (18.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-28 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.155125"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 7]]
+  [1m[35m (19.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 9], ["course_id", 1], ["user_id", 1], ["submission_id", 7], ["name", "08-07"], ["created_at", "2017-08-03 11:14:14.179326"], ["updated_at", "2017-08-03 11:14:14.179326"]]
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-29 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.193559"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 8]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 10], ["course_id", 1], ["user_id", 1], ["submission_id", 8], ["name", "08-08-08"], ["created_at", "2017-08-03 11:14:14.211415"], ["updated_at", "2017-08-03 11:14:14.211415"]]
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-01 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.228691"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 9]]
+  [1m[35m (16.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 11], ["course_id", 1], ["user_id", 1], ["submission_id", 9], ["name", "08-09"], ["created_at", "2017-08-03 11:14:14.250813"], ["updated_at", "2017-08-03 11:14:14.250813"]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-01 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.264752"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 10]]
+  [1m[35m (23.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 12], ["course_id", 1], ["user_id", 1], ["submission_id", 10], ["name", "08-10"], ["created_at", "2017-08-03 11:14:14.292606"], ["updated_at", "2017-08-03 11:14:14.292606"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-01 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.306287"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 11]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 13], ["course_id", 1], ["user_id", 1], ["submission_id", 11], ["name", "08-11"], ["created_at", "2017-08-03 11:14:14.317896"], ["updated_at", "2017-08-03 11:14:14.317896"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-05 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.328831"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 12]]
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 14], ["course_id", 1], ["user_id", 1], ["submission_id", 12], ["name", "08-12"], ["created_at", "2017-08-03 11:14:14.344439"], ["updated_at", "2017-08-03 11:14:14.344439"]]
+  [1m[35m (21.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-08 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.370578"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 13]]
+  [1m[35m (26.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 15], ["course_id", 1], ["user_id", 1], ["submission_id", 13], ["name", "08-13"], ["created_at", "2017-08-03 11:14:14.401507"], ["updated_at", "2017-08-03 11:14:14.401507"]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-10 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.419316"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 14]]
+  [1m[35m (20.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 16], ["course_id", 1], ["user_id", 1], ["submission_id", 14], ["name", "08-14"], ["created_at", "2017-08-03 11:14:14.443820"], ["updated_at", "2017-08-03 11:14:14.443820"]]
+  [1m[35m (16.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-11 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.464170"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 15]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 17], ["course_id", 1], ["user_id", 1], ["submission_id", 15], ["name", "08-15-1"], ["created_at", "2017-08-03 11:14:14.476820"], ["updated_at", "2017-08-03 11:14:14.476820"]]
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 18], ["course_id", 1], ["user_id", 1], ["submission_id", 15], ["name", "08-15-2"], ["created_at", "2017-08-03 11:14:14.493654"], ["updated_at", "2017-08-03 11:14:14.493654"]]
+  [1m[35m (16.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 19], ["course_id", 1], ["user_id", 1], ["submission_id", 15], ["name", "08-15-3"], ["created_at", "2017-08-03 11:14:14.512962"], ["updated_at", "2017-08-03 11:14:14.512962"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-12 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.524787"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 16]]
+  [1m[35m (19.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 20], ["course_id", 1], ["user_id", 1], ["submission_id", 16], ["name", "08-16"], ["created_at", "2017-08-03 11:14:14.549269"], ["updated_at", "2017-08-03 11:14:14.549269"]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-13 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.566699"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 17]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 21], ["course_id", 1], ["user_id", 1], ["submission_id", 17], ["name", "08-17-1"], ["created_at", "2017-08-03 11:14:14.582003"], ["updated_at", "2017-08-03 11:14:14.582003"]]
+  [1m[35m (20.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 22], ["course_id", 1], ["user_id", 1], ["submission_id", 17], ["name", "08-17-2"], ["created_at", "2017-08-03 11:14:14.606014"], ["updated_at", "2017-08-03 11:14:14.606014"]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 22], ["course_id", 1], ["user_id", 1], ["submission_id", 17], ["name", "08-17-3"], ["created_at", "2017-08-03 11:14:14.622774"], ["updated_at", "2017-08-03 11:14:14.622774"]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-13 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.639335"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 18]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 23], ["course_id", 1], ["user_id", 1], ["submission_id", 18], ["name", "08-18"], ["created_at", "2017-08-03 11:14:14.657654"], ["updated_at", "2017-08-03 11:14:14.657654"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-15 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.669019"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 19]]
+  [1m[35m (23.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 24], ["course_id", 1], ["user_id", 1], ["submission_id", 19], ["name", "08-19"], ["created_at", "2017-08-03 11:14:14.697571"], ["updated_at", "2017-08-03 11:14:14.697571"]]
+  [1m[35m (28.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-16 07:29:01.400000"], ["updated_at", "2017-08-03 11:14:14.729953"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.5345"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 20]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 25], ["course_id", 1], ["user_id", 1], ["submission_id", 20], ["name", "08-20"], ["created_at", "2017-08-03 11:14:14.742303"], ["updated_at", "2017-08-03 11:14:14.742303"]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/skills" for 127.0.0.1 at 2017-08-03 14:14:22 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/skills"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/points" for 127.0.0.1 at 2017-08-03 14:14:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/points"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "//api/v8/courses/:course_id/users/:user_id/skills" for 127.0.0.1 at 2017-08-03 14:15:32 +0300
+Processing by SkillsController#index as HTML
+  Parameters: {"course_id"=>":course_id", "user_id"=>":user_id"}
+No serializer found for resource: {:label=>"for", :user=>50, :average=>60}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.25ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "///api/v8/courses/:course_id/users/:user_id/skills" for 127.0.0.1 at 2017-08-03 14:16:00 +0300
+Processing by SkillsController#index as HTML
+  Parameters: {"course_id"=>":course_id", "user_id"=>":user_id"}
+No serializer found for resource: {:label=>"for", :user=>50, :average=>60}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.15ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/skills" for 127.0.0.1 at 2017-08-03 14:16:18 +0300
+Processing by SkillsController#index as HTML
+No serializer found for resource: {:label=>"for", :user=>50, :average=>60}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.27ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
