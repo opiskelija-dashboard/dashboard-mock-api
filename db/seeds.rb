@@ -65,7 +65,7 @@ Submission.create(id: 5, user_id: 15653, created_at: "2017-07-25T10:29:01.400+03
 
 Point.create(exercise_id: 2, point_id: 7, course_id: 1, user_id: 1, submission_id: 5, name: "08-02.2")  
 
-Submission.create(:id 6, user_id: 15653, created_at: "2017-07-24T10:29:01.400+03:00",
+Submission.create(id: 6, user_id: 15653, created_at: "2017-07-24T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-02.3", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
