@@ -4335,3 +4335,881 @@ No serializer found for resource: {:id=>1, :available_points=>[{:id=>1, :exercis
 Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/skills-raw" for 127.0.0.1 at 2017-08-04 11:30:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SkillsController#complex_index as HTML
+No serializer found for resource: {:label=>"for", :exercises=>[{:id=>1, :name=>"name1"}, {:id=>2, :name=>"name2"}, {:id=>3, :name=>"name3"}, {:id=>7, :name=>"name7"}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.4ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-08-04 11:30:07 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cumulative-points" for 127.0.0.1 at 2017-08-04 12:12:01 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/cumulative-points"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/points" for 127.0.0.1 at 2017-08-04 12:26:44 +0300
+Processing by PointsController#index as */*
+  [1m[36mPoint Load (0.7ms)[0m  [1m[34mSELECT "points".* FROM "points"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.76ms)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/submissions" for 127.0.0.1 at 2017-08-04 12:26:44 +0300
+Processing by SubmissionsController#index as */*
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.99ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/points" for 127.0.0.1 at 2017-08-04 12:26:44 +0300
+Processing by PointsController#index as */*
+  [1m[36mPoint Load (0.3ms)[0m  [1m[34mSELECT "points".* FROM "points"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.87ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/submissions" for 127.0.0.1 at 2017-08-04 12:26:44 +0300
+Processing by SubmissionsController#index as */*
+  [1m[36mSubmission Load (0.4ms)[0m  [1m[34mSELECT "submissions".* FROM "submissions"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.21ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/points" for 127.0.0.1 at 2017-08-04 13:36:37 +0300
+Processing by PointsController#index as HTML
+  [1m[36mPoint Load (0.2ms)[0m  [1m[34mSELECT "points".* FROM "points"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.75ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/points" for 127.0.0.1 at 2017-08-04 14:19:39 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PointsController#index as HTML
+  [1m[36mPoint Load (0.2ms)[0m  [1m[34mSELECT "points".* FROM "points"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.15ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (22.2ms)[0m  [1m[35mCREATE TABLE "exercises" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (25.3ms)[0m  [1m[35mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "exercise_id" integer, "point_id" integer, "course_id" integer, "user_id" integer, "submission_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (25.5ms)[0m  [1m[35mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "pretest_error" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "exercise_name" varchar, "course_id" integer, "processed" boolean, "all_tests_passed" boolean, "points" text, "processing_tried_at" datetime, "processing_began_at" datetime, "processing_completed_at" datetime, "times_sent_to_sandbox" integer, "processing_attempts_started_at" datetime, "params_json" text, "requires_review" boolean, "requests_review" boolean, "reviewed" boolean, "message_for_reviewer" text, "newer_submission_reviewed" boolean, "review_dismissed" boolean, "paste_available" boolean, "message_for_paste" text, "paste_key" varchar, "submission_id" integer)[0m
+  [1m[35m (25.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (22.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170803094423)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (7.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170720084348),
+(20170727092145);
+
+[0m
+  [1m[35m (18.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-04 11:19:56.289906"], ["updated_at", "2017-08-04 11:19:56.289906"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (18.8ms)[0m  [1m[35mCREATE TABLE "exercises" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "exercise_id" integer, "point_id" integer, "course_id" integer, "user_id" integer, "submission_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (24.6ms)[0m  [1m[35mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "pretest_error" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "exercise_name" varchar, "course_id" integer, "processed" boolean, "all_tests_passed" boolean, "points" text, "processing_tried_at" datetime, "processing_began_at" datetime, "processing_completed_at" datetime, "times_sent_to_sandbox" integer, "processing_attempts_started_at" datetime, "params_json" text, "requires_review" boolean, "requests_review" boolean, "reviewed" boolean, "message_for_reviewer" text, "newer_submission_reviewed" boolean, "review_dismissed" boolean, "paste_available" boolean, "message_for_paste" text, "paste_key" varchar, "submission_id" integer)[0m
+  [1m[35m (21.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (16.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170803094423)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (13.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170720084348),
+(20170727092145);
+
+[0m
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-04 11:19:56.438288"], ["updated_at", "2017-08-04 11:19:56.438288"]]
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 35653], ["created_at", "2017-07-20 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.476584"], ["exercise_name", "osa08-Osa08_08.TavaroitaJaLaatikoita"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-01.1 08-01.2 08-01.3"], ["processing_tried_at", "2017-07-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-07-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 1]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 1], ["course_id", 1], ["user_id", 1], ["submission_id", 1], ["name", "08-01.1"], ["created_at", "2017-08-04 11:19:56.497262"], ["updated_at", "2017-08-04 11:19:56.497262"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 2], ["course_id", 1], ["user_id", 1], ["submission_id", 1], ["name", "08-01.2"], ["created_at", "2017-08-04 11:19:56.508054"], ["updated_at", "2017-08-04 11:19:56.508054"]]
+  [1m[35m (18.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 3], ["course_id", 1], ["user_id", 1], ["submission_id", 1], ["name", "08-01.3"], ["created_at", "2017-08-04 11:19:56.530153"], ["updated_at", "2017-08-04 11:19:56.530153"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-21 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.544338"], ["exercise_name", "osa333"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-01.4"], ["processing_tried_at", "2017-07-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-07-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 2]]
+  [1m[35m (15.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 4], ["course_id", 1], ["user_id", 1], ["submission_id", 2], ["name", "08-01.4"], ["created_at", "2017-08-04 11:19:56.564544"], ["updated_at", "2017-08-04 11:19:56.564544"]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-22 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.582201"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-01.5"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 3]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 5], ["course_id", 1], ["user_id", 1], ["submission_id", 3], ["name", "08-01.5"], ["created_at", "2017-08-04 11:19:56.594843"], ["updated_at", "2017-08-04 11:19:56.594843"]]
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-23 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.612603"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-02.1"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 4]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 6], ["course_id", 1], ["user_id", 1], ["submission_id", 4], ["name", "08-02.1"], ["created_at", "2017-08-04 11:19:56.624931"], ["updated_at", "2017-08-04 11:19:56.624931"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-25 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.635751"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-02.2"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 5]]
+  [1m[35m (16.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 7], ["course_id", 1], ["user_id", 1], ["submission_id", 5], ["name", "08-02.2"], ["created_at", "2017-08-04 11:19:56.656152"], ["updated_at", "2017-08-04 11:19:56.656152"]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-24 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.677373"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-02.3"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 6]]
+  [1m[35m (22.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 8], ["course_id", 1], ["user_id", 1], ["submission_id", 6], ["name", "08-02.3"], ["created_at", "2017-08-04 11:19:56.705026"], ["updated_at", "2017-08-04 11:19:56.705026"]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-28 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.721003"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-02.4"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 7]]
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 9], ["course_id", 1], ["user_id", 1], ["submission_id", 7], ["name", "08-02.4"], ["created_at", "2017-08-04 11:19:56.743433"], ["updated_at", "2017-08-04 11:19:56.743433"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-29 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.754423"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-03.1"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 8]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 10], ["course_id", 1], ["user_id", 1], ["submission_id", 8], ["name", "08-03.1"], ["created_at", "2017-08-04 11:19:56.766426"], ["updated_at", "2017-08-04 11:19:56.766426"]]
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-01 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.782870"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-03.2"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 9]]
+  [1m[35m (25.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 11], ["course_id", 1], ["user_id", 1], ["submission_id", 9], ["name", "08-03.2"], ["created_at", "2017-08-04 11:19:56.812031"], ["updated_at", "2017-08-04 11:19:56.812031"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-01 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.824522"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-03.3"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 10]]
+  [1m[35m (25.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 12], ["course_id", 1], ["user_id", 1], ["submission_id", 10], ["name", "08-03.3"], ["created_at", "2017-08-04 11:19:56.853617"], ["updated_at", "2017-08-04 11:19:56.853617"]]
+  [1m[35m (22.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-01 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.880090"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-04.1"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 11]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 13], ["course_id", 1], ["user_id", 1], ["submission_id", 11], ["name", "08-04.1"], ["created_at", "2017-08-04 11:19:56.898748"], ["updated_at", "2017-08-04 11:19:56.898748"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-05 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.910404"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-04.2"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 12]]
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 14], ["course_id", 1], ["user_id", 1], ["submission_id", 12], ["name", "08-04.2"], ["created_at", "2017-08-04 11:19:56.929538"], ["updated_at", "2017-08-04 11:19:56.929538"]]
+  [1m[35m (24.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-08 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.957207"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-04.3"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 13]]
+  [1m[35m (16.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 15], ["course_id", 1], ["user_id", 1], ["submission_id", 13], ["name", "08-04.3"], ["created_at", "2017-08-04 11:19:56.978029"], ["updated_at", "2017-08-04 11:19:56.978029"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-10 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:56.989636"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-05"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 14]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 5], ["point_id", 16], ["course_id", 1], ["user_id", 1], ["submission_id", 14], ["name", "08-05"], ["created_at", "2017-08-04 11:19:57.002282"], ["updated_at", "2017-08-04 11:19:57.002282"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-11 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:57.017211"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-06.1 08-06.2 08-06.3"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 15]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 17], ["course_id", 1], ["user_id", 1], ["submission_id", 15], ["name", "08-06.1"], ["created_at", "2017-08-04 11:19:57.036171"], ["updated_at", "2017-08-04 11:19:57.036171"]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 18], ["course_id", 1], ["user_id", 1], ["submission_id", 15], ["name", "08-06.2"], ["created_at", "2017-08-04 11:19:57.050198"], ["updated_at", "2017-08-04 11:19:57.050198"]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 19], ["course_id", 1], ["user_id", 1], ["submission_id", 15], ["name", "08-06.3"], ["created_at", "2017-08-04 11:19:57.067008"], ["updated_at", "2017-08-04 11:19:57.067008"]]
+  [1m[35m (19.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-12 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:57.090830"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-07.1"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 16]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 20], ["course_id", 1], ["user_id", 1], ["submission_id", 16], ["name", "08-07.1"], ["created_at", "2017-08-04 11:19:57.102997"], ["updated_at", "2017-08-04 11:19:57.102997"]]
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-13 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:57.121244"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-07.2 08-07.3 08-07.4"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 17]]
+  [1m[35m (15.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 21], ["course_id", 1], ["user_id", 1], ["submission_id", 17], ["name", "08-07.2"], ["created_at", "2017-08-04 11:19:57.141659"], ["updated_at", "2017-08-04 11:19:57.141659"]]
+  [1m[35m (28.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 22], ["course_id", 1], ["user_id", 1], ["submission_id", 17], ["name", "08-07.3"], ["created_at", "2017-08-04 11:19:57.172125"], ["updated_at", "2017-08-04 11:19:57.172125"]]
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 23], ["course_id", 1], ["user_id", 1], ["submission_id", 17], ["name", "08-07.4"], ["created_at", "2017-08-04 11:19:57.189687"], ["updated_at", "2017-08-04 11:19:57.189687"]]
+  [1m[35m (15.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-13 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:57.209476"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.1"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 18]]
+  [1m[35m (16.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 24], ["course_id", 1], ["user_id", 1], ["submission_id", 18], ["name", "08-08.1"], ["created_at", "2017-08-04 11:19:57.231215"], ["updated_at", "2017-08-04 11:19:57.231215"]]
+  [1m[35m (17.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-15 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:57.251470"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.2"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 19]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 25], ["course_id", 1], ["user_id", 1], ["submission_id", 19], ["name", "08-08.2"], ["created_at", "2017-08-04 11:19:57.264031"], ["updated_at", "2017-08-04 11:19:57.264031"]]
+  [1m[35m (19.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-16 07:29:01.400000"], ["updated_at", "2017-08-04 11:19:57.287676"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-08.3"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 20]]
+  [1m[35m (19.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 26], ["course_id", 1], ["user_id", 1], ["submission_id", 20], ["name", "08-08.3"], ["created_at", "2017-08-04 11:19:57.313109"], ["updated_at", "2017-08-04 11:19:57.313109"]]
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 1], ["course_id", 1], ["user_id", 2], ["submission_id", 1], ["name", "08-01.1"], ["created_at", "2017-08-04 11:19:57.331102"], ["updated_at", "2017-08-04 11:19:57.331102"]]
+  [1m[35m (30.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 2], ["course_id", 1], ["user_id", 2], ["submission_id", 1], ["name", "08-01.2"], ["created_at", "2017-08-04 11:19:57.364857"], ["updated_at", "2017-08-04 11:19:57.364857"]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 3], ["course_id", 1], ["user_id", 2], ["submission_id", 1], ["name", "08-01.3"], ["created_at", "2017-08-04 11:19:57.382228"], ["updated_at", "2017-08-04 11:19:57.382228"]]
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 4], ["course_id", 1], ["user_id", 2], ["submission_id", 2], ["name", "08-01.4"], ["created_at", "2017-08-04 11:19:57.396794"], ["updated_at", "2017-08-04 11:19:57.396794"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 5], ["course_id", 1], ["user_id", 2], ["submission_id", 3], ["name", "08-01.5"], ["created_at", "2017-08-04 11:19:57.408223"], ["updated_at", "2017-08-04 11:19:57.408223"]]
+  [1m[35m (17.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 6], ["course_id", 1], ["user_id", 2], ["submission_id", 4], ["name", "08-02.1"], ["created_at", "2017-08-04 11:19:57.429941"], ["updated_at", "2017-08-04 11:19:57.429941"]]
+  [1m[35m (24.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 7], ["course_id", 1], ["user_id", 2], ["submission_id", 5], ["name", "08-02.2"], ["created_at", "2017-08-04 11:19:57.457359"], ["updated_at", "2017-08-04 11:19:57.457359"]]
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 8], ["course_id", 1], ["user_id", 2], ["submission_id", 6], ["name", "08-02.3"], ["created_at", "2017-08-04 11:19:57.476340"], ["updated_at", "2017-08-04 11:19:57.476340"]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 9], ["course_id", 1], ["user_id", 2], ["submission_id", 7], ["name", "08-02.4"], ["created_at", "2017-08-04 11:19:57.493409"], ["updated_at", "2017-08-04 11:19:57.493409"]]
+  [1m[35m (16.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 10], ["course_id", 1], ["user_id", 2], ["submission_id", 8], ["name", "08-03.1"], ["created_at", "2017-08-04 11:19:57.514402"], ["updated_at", "2017-08-04 11:19:57.514402"]]
+  [1m[35m (16.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 11], ["course_id", 1], ["user_id", 2], ["submission_id", 9], ["name", "08-03.2"], ["created_at", "2017-08-04 11:19:57.534322"], ["updated_at", "2017-08-04 11:19:57.534322"]]
+  [1m[35m (23.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 12], ["course_id", 1], ["user_id", 2], ["submission_id", 10], ["name", "08-03.3"], ["created_at", "2017-08-04 11:19:57.565411"], ["updated_at", "2017-08-04 11:19:57.565411"]]
+  [1m[35m (14.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 13], ["course_id", 1], ["user_id", 2], ["submission_id", 11], ["name", "08-04.1"], ["created_at", "2017-08-04 11:19:57.582629"], ["updated_at", "2017-08-04 11:19:57.582629"]]
+  [1m[35m (14.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 14], ["course_id", 1], ["user_id", 2], ["submission_id", 12], ["name", "08-04.2"], ["created_at", "2017-08-04 11:19:57.601338"], ["updated_at", "2017-08-04 11:19:57.601338"]]
+  [1m[35m (21.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 15], ["course_id", 1], ["user_id", 2], ["submission_id", 13], ["name", "08-04.3"], ["created_at", "2017-08-04 11:19:57.626513"], ["updated_at", "2017-08-04 11:19:57.626513"]]
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 5], ["point_id", 16], ["course_id", 1], ["user_id", 2], ["submission_id", 14], ["name", "08-05"], ["created_at", "2017-08-04 11:19:57.643707"], ["updated_at", "2017-08-04 11:19:57.643707"]]
+  [1m[35m (17.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 17], ["course_id", 1], ["user_id", 2], ["submission_id", 15], ["name", "08-06.1"], ["created_at", "2017-08-04 11:19:57.665983"], ["updated_at", "2017-08-04 11:19:57.665983"]]
+  [1m[35m (17.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 18], ["course_id", 1], ["user_id", 2], ["submission_id", 15], ["name", "08-06.2"], ["created_at", "2017-08-04 11:19:57.689165"], ["updated_at", "2017-08-04 11:19:57.689165"]]
+  [1m[35m (19.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 19], ["course_id", 1], ["user_id", 2], ["submission_id", 15], ["name", "08-06.3"], ["created_at", "2017-08-04 11:19:57.712041"], ["updated_at", "2017-08-04 11:19:57.712041"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 20], ["course_id", 1], ["user_id", 2], ["submission_id", 16], ["name", "08-07.1"], ["created_at", "2017-08-04 11:19:57.724004"], ["updated_at", "2017-08-04 11:19:57.724004"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 21], ["course_id", 1], ["user_id", 2], ["submission_id", 17], ["name", "08-07.2"], ["created_at", "2017-08-04 11:19:57.734890"], ["updated_at", "2017-08-04 11:19:57.734890"]]
+  [1m[35m (15.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 22], ["course_id", 1], ["user_id", 2], ["submission_id", 17], ["name", "08-07.3"], ["created_at", "2017-08-04 11:19:57.752451"], ["updated_at", "2017-08-04 11:19:57.752451"]]
+  [1m[35m (25.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 23], ["course_id", 1], ["user_id", 2], ["submission_id", 17], ["name", "08-07.4"], ["created_at", "2017-08-04 11:19:57.781187"], ["updated_at", "2017-08-04 11:19:57.781187"]]
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 24], ["course_id", 1], ["user_id", 2], ["submission_id", 18], ["name", "08-08.1"], ["created_at", "2017-08-04 11:19:57.797776"], ["updated_at", "2017-08-04 11:19:57.797776"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 25], ["course_id", 1], ["user_id", 2], ["submission_id", 19], ["name", "08-08.2"], ["created_at", "2017-08-04 11:19:57.809071"], ["updated_at", "2017-08-04 11:19:57.809071"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 26], ["course_id", 1], ["user_id", 2], ["submission_id", 20], ["name", "08-08.3"], ["created_at", "2017-08-04 11:19:57.820875"], ["updated_at", "2017-08-04 11:19:57.820875"]]
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 1], ["course_id", 1], ["user_id", 3], ["submission_id", 1], ["name", "08-01.1"], ["created_at", "2017-08-04 11:19:57.837793"], ["updated_at", "2017-08-04 11:19:57.837793"]]
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 2], ["course_id", 1], ["user_id", 3], ["submission_id", 1], ["name", "08-01.2"], ["created_at", "2017-08-04 11:19:57.856670"], ["updated_at", "2017-08-04 11:19:57.856670"]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 3], ["course_id", 1], ["user_id", 3], ["submission_id", 1], ["name", "08-01.3"], ["created_at", "2017-08-04 11:19:57.874062"], ["updated_at", "2017-08-04 11:19:57.874062"]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 4], ["course_id", 1], ["user_id", 3], ["submission_id", 2], ["name", "08-01.4"], ["created_at", "2017-08-04 11:19:57.891094"], ["updated_at", "2017-08-04 11:19:57.891094"]]
+  [1m[35m (19.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 5], ["course_id", 1], ["user_id", 3], ["submission_id", 3], ["name", "08-01.5"], ["created_at", "2017-08-04 11:19:57.915130"], ["updated_at", "2017-08-04 11:19:57.915130"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 6], ["course_id", 1], ["user_id", 3], ["submission_id", 4], ["name", "08-02.1"], ["created_at", "2017-08-04 11:19:57.926474"], ["updated_at", "2017-08-04 11:19:57.926474"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 7], ["course_id", 1], ["user_id", 3], ["submission_id", 5], ["name", "08-02.2"], ["created_at", "2017-08-04 11:19:57.937615"], ["updated_at", "2017-08-04 11:19:57.937615"]]
+  [1m[35m (16.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 8], ["course_id", 1], ["user_id", 3], ["submission_id", 6], ["name", "08-02.3"], ["created_at", "2017-08-04 11:19:57.957188"], ["updated_at", "2017-08-04 11:19:57.957188"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 9], ["course_id", 1], ["user_id", 3], ["submission_id", 7], ["name", "08-02.4"], ["created_at", "2017-08-04 11:19:57.969508"], ["updated_at", "2017-08-04 11:19:57.969508"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 10], ["course_id", 1], ["user_id", 3], ["submission_id", 8], ["name", "08-03.1"], ["created_at", "2017-08-04 11:19:57.982055"], ["updated_at", "2017-08-04 11:19:57.982055"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 11], ["course_id", 1], ["user_id", 3], ["submission_id", 9], ["name", "08-03.2"], ["created_at", "2017-08-04 11:19:58.005487"], ["updated_at", "2017-08-04 11:19:58.005487"]]
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 12], ["course_id", 1], ["user_id", 3], ["submission_id", 10], ["name", "08-03.3"], ["created_at", "2017-08-04 11:19:58.022709"], ["updated_at", "2017-08-04 11:19:58.022709"]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 13], ["course_id", 1], ["user_id", 3], ["submission_id", 11], ["name", "08-04.1"], ["created_at", "2017-08-04 11:19:58.039116"], ["updated_at", "2017-08-04 11:19:58.039116"]]
+  [1m[35m (19.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 14], ["course_id", 1], ["user_id", 3], ["submission_id", 12], ["name", "08-04.2"], ["created_at", "2017-08-04 11:19:58.064051"], ["updated_at", "2017-08-04 11:19:58.064051"]]
+  [1m[35m (22.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 15], ["course_id", 1], ["user_id", 3], ["submission_id", 13], ["name", "08-04.3"], ["created_at", "2017-08-04 11:19:58.092251"], ["updated_at", "2017-08-04 11:19:58.092251"]]
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 5], ["point_id", 16], ["course_id", 1], ["user_id", 3], ["submission_id", 14], ["name", "08-05"], ["created_at", "2017-08-04 11:19:58.110240"], ["updated_at", "2017-08-04 11:19:58.110240"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 17], ["course_id", 1], ["user_id", 3], ["submission_id", 15], ["name", "08-06.1"], ["created_at", "2017-08-04 11:19:58.124773"], ["updated_at", "2017-08-04 11:19:58.124773"]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 18], ["course_id", 1], ["user_id", 3], ["submission_id", 15], ["name", "08-06.2"], ["created_at", "2017-08-04 11:19:58.140953"], ["updated_at", "2017-08-04 11:19:58.140953"]]
+  [1m[35m (16.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 19], ["course_id", 1], ["user_id", 3], ["submission_id", 15], ["name", "08-06.3"], ["created_at", "2017-08-04 11:19:58.162724"], ["updated_at", "2017-08-04 11:19:58.162724"]]
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 20], ["course_id", 1], ["user_id", 3], ["submission_id", 16], ["name", "08-07.1"], ["created_at", "2017-08-04 11:19:58.179301"], ["updated_at", "2017-08-04 11:19:58.179301"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 21], ["course_id", 1], ["user_id", 3], ["submission_id", 17], ["name", "08-07.2"], ["created_at", "2017-08-04 11:19:58.192320"], ["updated_at", "2017-08-04 11:19:58.192320"]]
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 22], ["course_id", 1], ["user_id", 3], ["submission_id", 17], ["name", "08-07.3"], ["created_at", "2017-08-04 11:19:58.213074"], ["updated_at", "2017-08-04 11:19:58.213074"]]
+  [1m[35m (18.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 23], ["course_id", 1], ["user_id", 3], ["submission_id", 17], ["name", "08-07.4"], ["created_at", "2017-08-04 11:19:58.235794"], ["updated_at", "2017-08-04 11:19:58.235794"]]
+  [1m[35m (24.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 24], ["course_id", 1], ["user_id", 3], ["submission_id", 18], ["name", "08-08.1"], ["created_at", "2017-08-04 11:19:58.262563"], ["updated_at", "2017-08-04 11:19:58.262563"]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 25], ["course_id", 1], ["user_id", 3], ["submission_id", 19], ["name", "08-08.2"], ["created_at", "2017-08-04 11:19:58.279334"], ["updated_at", "2017-08-04 11:19:58.279334"]]
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 26], ["course_id", 1], ["user_id", 3], ["submission_id", 20], ["name", "08-08.3"], ["created_at", "2017-08-04 11:19:58.293986"], ["updated_at", "2017-08-04 11:19:58.293986"]]
+  [1m[35m (22.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/points" for 127.0.0.1 at 2017-08-04 14:20:06 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PointsController#index as HTML
+  [1m[36mPoint Load (0.5ms)[0m  [1m[34mSELECT "points".* FROM "points"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.51ms)
+Completed 200 OK in 32ms (Views: 26.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/points" for 127.0.0.1 at 2017-08-04 14:34:21 +0300
+Processing by PointsController#index as HTML
+  [1m[36mPoint Load (0.9ms)[0m  [1m[34mSELECT "points".* FROM "points"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.27ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (18.3ms)[0m  [1m[35mCREATE TABLE "exercises" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (19.4ms)[0m  [1m[35mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "exercise_id" integer, "point_id" integer, "course_id" integer, "user_id" integer, "submission_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "pretest_error" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "exercise_name" varchar, "course_id" integer, "processed" boolean, "all_tests_passed" boolean, "points" text, "processing_tried_at" datetime, "processing_began_at" datetime, "processing_completed_at" datetime, "times_sent_to_sandbox" integer, "processing_attempts_started_at" datetime, "params_json" text, "requires_review" boolean, "requests_review" boolean, "reviewed" boolean, "message_for_reviewer" text, "newer_submission_reviewed" boolean, "review_dismissed" boolean, "paste_available" boolean, "message_for_paste" text, "paste_key" varchar, "submission_id" integer)[0m
+  [1m[35m (21.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (23.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170803094423)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (14.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170720084348),
+(20170727092145);
+
+[0m
+  [1m[35m (18.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-04 11:34:35.219506"], ["updated_at", "2017-08-04 11:34:35.219506"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "exercises" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (26.0ms)[0m  [1m[35mCREATE TABLE "points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "exercise_id" integer, "point_id" integer, "course_id" integer, "user_id" integer, "submission_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (20.0ms)[0m  [1m[35mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "pretest_error" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "exercise_name" varchar, "course_id" integer, "processed" boolean, "all_tests_passed" boolean, "points" text, "processing_tried_at" datetime, "processing_began_at" datetime, "processing_completed_at" datetime, "times_sent_to_sandbox" integer, "processing_attempts_started_at" datetime, "params_json" text, "requires_review" boolean, "requests_review" boolean, "reviewed" boolean, "message_for_reviewer" text, "newer_submission_reviewed" boolean, "review_dismissed" boolean, "paste_available" boolean, "message_for_paste" text, "paste_key" varchar, "submission_id" integer)[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (21.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170803094423)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (10.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170720084348),
+(20170727092145);
+
+[0m
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-04 11:34:35.358672"], ["updated_at", "2017-08-04 11:34:35.358672"]]
+  [1m[35m (18.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 35653], ["created_at", "2017-07-20 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.401322"], ["exercise_name", "osa08-Osa08_08.TavaroitaJaLaatikoita"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-01.1 08-01.2 08-01.3"], ["processing_tried_at", "2017-07-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-07-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 1]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 1], ["course_id", 1], ["user_id", 1], ["submission_id", 1], ["name", "08-01.1"], ["created_at", "2017-08-04 11:34:35.427642"], ["updated_at", "2017-08-04 11:34:35.427642"]]
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 2], ["course_id", 1], ["user_id", 1], ["submission_id", 1], ["name", "08-01.2"], ["created_at", "2017-08-04 11:34:35.445074"], ["updated_at", "2017-08-04 11:34:35.445074"]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 3], ["course_id", 1], ["user_id", 1], ["submission_id", 1], ["name", "08-01.3"], ["created_at", "2017-08-04 11:34:35.461895"], ["updated_at", "2017-08-04 11:34:35.461895"]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-21 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.478734"], ["exercise_name", "osa333"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-01.4"], ["processing_tried_at", "2017-07-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-07-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 2]]
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 4], ["course_id", 1], ["user_id", 1], ["submission_id", 2], ["name", "08-01.4"], ["created_at", "2017-08-04 11:34:35.494396"], ["updated_at", "2017-08-04 11:34:35.494396"]]
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-22 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.511605"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-01.5"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 3]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 1], ["point_id", 5], ["course_id", 1], ["user_id", 1], ["submission_id", 3], ["name", "08-01.5"], ["created_at", "2017-08-04 11:34:35.523512"], ["updated_at", "2017-08-04 11:34:35.523512"]]
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-23 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.540389"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-02.1"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 4]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 6], ["course_id", 1], ["user_id", 1], ["submission_id", 4], ["name", "08-02.1"], ["created_at", "2017-08-04 11:34:35.553086"], ["updated_at", "2017-08-04 11:34:35.553086"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-25 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.564375"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-02.2"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 5]]
+  [1m[35m (28.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 7], ["course_id", 1], ["user_id", 1], ["submission_id", 5], ["name", "08-02.2"], ["created_at", "2017-08-04 11:34:35.597188"], ["updated_at", "2017-08-04 11:34:35.597188"]]
+  [1m[35m (17.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-24 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.618278"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-02.3"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 6]]
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 8], ["course_id", 1], ["user_id", 1], ["submission_id", 6], ["name", "08-02.3"], ["created_at", "2017-08-04 11:34:35.636001"], ["updated_at", "2017-08-04 11:34:35.636001"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-28 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.647598"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-02.4"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 7]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 2], ["point_id", 9], ["course_id", 1], ["user_id", 1], ["submission_id", 7], ["name", "08-02.4"], ["created_at", "2017-08-04 11:34:35.660924"], ["updated_at", "2017-08-04 11:34:35.660924"]]
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-07-29 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.677601"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-03.1"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 8]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 10], ["course_id", 1], ["user_id", 1], ["submission_id", 8], ["name", "08-03.1"], ["created_at", "2017-08-04 11:34:35.694823"], ["updated_at", "2017-08-04 11:34:35.694823"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-01 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.706694"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-03.2"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 9]]
+  [1m[35m (15.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 11], ["course_id", 1], ["user_id", 1], ["submission_id", 9], ["name", "08-03.2"], ["created_at", "2017-08-04 11:34:35.727477"], ["updated_at", "2017-08-04 11:34:35.727477"]]
+  [1m[35m (12.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-01 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.743845"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-03.3"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 10]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 12], ["course_id", 1], ["user_id", 1], ["submission_id", 10], ["name", "08-03.3"], ["created_at", "2017-08-04 11:34:35.761989"], ["updated_at", "2017-08-04 11:34:35.761989"]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-01 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.778674"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-04.1"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 11]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 13], ["course_id", 1], ["user_id", 1], ["submission_id", 11], ["name", "08-04.1"], ["created_at", "2017-08-04 11:34:35.794363"], ["updated_at", "2017-08-04 11:34:35.794363"]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-05 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.812575"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-04.2"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 12]]
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 14], ["course_id", 1], ["user_id", 1], ["submission_id", 12], ["name", "08-04.2"], ["created_at", "2017-08-04 11:34:35.828471"], ["updated_at", "2017-08-04 11:34:35.828471"]]
+  [1m[35m (26.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-08 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.859282"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-04.3"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 13]]
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 15], ["course_id", 1], ["user_id", 1], ["submission_id", 13], ["name", "08-04.3"], ["created_at", "2017-08-04 11:34:35.880192"], ["updated_at", "2017-08-04 11:34:35.880192"]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-10 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.899039"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-05"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 14]]
+  [1m[35m (20.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 5], ["point_id", 16], ["course_id", 1], ["user_id", 1], ["submission_id", 14], ["name", "08-05"], ["created_at", "2017-08-04 11:34:35.924185"], ["updated_at", "2017-08-04 11:34:35.924185"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "submissions" ("user_id", "created_at", "updated_at", "exercise_name", "course_id", "processed", "all_tests_passed", "points", "processing_tried_at", "processing_began_at", "processing_completed_at", "times_sent_to_sandbox", "processing_attempts_started_at", "params_json", "requires_review", "requests_review", "reviewed", "message_for_reviewer", "newer_submission_reviewed", "review_dismissed", "paste_available", "message_for_paste", "submission_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 15653], ["created_at", "2017-08-11 07:29:01.400000"], ["updated_at", "2017-08-04 11:34:35.935369"], ["exercise_name", "osa999"], ["course_id", 214], ["processed", "t"], ["all_tests_passed", "t"], ["points", "08-06.1 08-06.2 08-06.3"], ["processing_tried_at", "2017-09-20 07:29:01.437000"], ["processing_began_at", "2017-07-20 07:29:02.754000"], ["processing_completed_at", "2017-07-20 07:29:17.364000"], ["times_sent_to_sandbox", 1], ["processing_attempts_started_at", "2017-09-20 07:29:01.400000"], ["params_json", "{\"error_msg_locale\":\"fi\"}"], ["requires_review", "f"], ["requests_review", "f"], ["reviewed", "f"], ["message_for_reviewer", ""], ["newer_submission_reviewed", "f"], ["review_dismissed", "f"], ["paste_available", "f"], ["message_for_paste", ""], ["submission_id", 15]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 17], ["course_id", 1], ["user_id", 1], ["submission_id", 15], ["name", "08-06.1"], ["created_at", "2017-08-04 11:34:35.954108"], ["updated_at", "2017-08-04 11:34:35.954108"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 18], ["course_id", 1], ["user_id", 1], ["submission_id", 15], ["name", "08-06.2"], ["created_at", "2017-08-04 11:34:35.964178"], ["updated_at", "2017-08-04 11:34:35.964178"]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 19], ["course_id", 1], ["user_id", 1], ["submission_id", 15], ["name", "08-06.3"], ["created_at", "2017-08-04 11:34:35.981065"], ["updated_at", "2017-08-04 11:34:35.981065"]]
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 10], ["course_id", 1], ["user_id", 2], ["submission_id", 8], ["name", "08-03.1"], ["created_at", "2017-08-04 11:34:35.995569"], ["updated_at", "2017-08-04 11:34:35.995569"]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 11], ["course_id", 1], ["user_id", 2], ["submission_id", 9], ["name", "08-03.2"], ["created_at", "2017-08-04 11:34:36.012400"], ["updated_at", "2017-08-04 11:34:36.012400"]]
+  [1m[35m (18.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 12], ["course_id", 1], ["user_id", 2], ["submission_id", 10], ["name", "08-03.3"], ["created_at", "2017-08-04 11:34:36.035028"], ["updated_at", "2017-08-04 11:34:36.035028"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 13], ["course_id", 1], ["user_id", 2], ["submission_id", 11], ["name", "08-04.1"], ["created_at", "2017-08-04 11:34:36.045611"], ["updated_at", "2017-08-04 11:34:36.045611"]]
+  [1m[35m (17.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 14], ["course_id", 1], ["user_id", 2], ["submission_id", 12], ["name", "08-04.2"], ["created_at", "2017-08-04 11:34:36.067389"], ["updated_at", "2017-08-04 11:34:36.067389"]]
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 15], ["course_id", 1], ["user_id", 2], ["submission_id", 13], ["name", "08-04.3"], ["created_at", "2017-08-04 11:34:36.085058"], ["updated_at", "2017-08-04 11:34:36.085058"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 5], ["point_id", 16], ["course_id", 1], ["user_id", 2], ["submission_id", 14], ["name", "08-05"], ["created_at", "2017-08-04 11:34:36.096946"], ["updated_at", "2017-08-04 11:34:36.096946"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 17], ["course_id", 1], ["user_id", 2], ["submission_id", 15], ["name", "08-06.1"], ["created_at", "2017-08-04 11:34:36.108628"], ["updated_at", "2017-08-04 11:34:36.108628"]]
+  [1m[35m (21.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 18], ["course_id", 1], ["user_id", 2], ["submission_id", 15], ["name", "08-06.2"], ["created_at", "2017-08-04 11:34:36.135048"], ["updated_at", "2017-08-04 11:34:36.135048"]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 19], ["course_id", 1], ["user_id", 2], ["submission_id", 15], ["name", "08-06.3"], ["created_at", "2017-08-04 11:34:36.152663"], ["updated_at", "2017-08-04 11:34:36.152663"]]
+  [1m[35m (19.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 20], ["course_id", 1], ["user_id", 2], ["submission_id", 16], ["name", "08-07.1"], ["created_at", "2017-08-04 11:34:36.175695"], ["updated_at", "2017-08-04 11:34:36.175695"]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 21], ["course_id", 1], ["user_id", 2], ["submission_id", 17], ["name", "08-07.2"], ["created_at", "2017-08-04 11:34:36.193020"], ["updated_at", "2017-08-04 11:34:36.193020"]]
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 22], ["course_id", 1], ["user_id", 2], ["submission_id", 17], ["name", "08-07.3"], ["created_at", "2017-08-04 11:34:36.209140"], ["updated_at", "2017-08-04 11:34:36.209140"]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 7], ["point_id", 23], ["course_id", 1], ["user_id", 2], ["submission_id", 17], ["name", "08-07.4"], ["created_at", "2017-08-04 11:34:36.221090"], ["updated_at", "2017-08-04 11:34:36.221090"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 24], ["course_id", 1], ["user_id", 2], ["submission_id", 18], ["name", "08-08.1"], ["created_at", "2017-08-04 11:34:36.233611"], ["updated_at", "2017-08-04 11:34:36.233611"]]
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 25], ["course_id", 1], ["user_id", 2], ["submission_id", 19], ["name", "08-08.2"], ["created_at", "2017-08-04 11:34:36.255507"], ["updated_at", "2017-08-04 11:34:36.255507"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 8], ["point_id", 26], ["course_id", 1], ["user_id", 2], ["submission_id", 20], ["name", "08-08.3"], ["created_at", "2017-08-04 11:34:36.267169"], ["updated_at", "2017-08-04 11:34:36.267169"]]
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 10], ["course_id", 1], ["user_id", 3], ["submission_id", 8], ["name", "08-03.1"], ["created_at", "2017-08-04 11:34:36.284525"], ["updated_at", "2017-08-04 11:34:36.284525"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 11], ["course_id", 1], ["user_id", 3], ["submission_id", 9], ["name", "08-03.2"], ["created_at", "2017-08-04 11:34:36.297082"], ["updated_at", "2017-08-04 11:34:36.297082"]]
+  [1m[35m (17.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 3], ["point_id", 12], ["course_id", 1], ["user_id", 3], ["submission_id", 10], ["name", "08-03.3"], ["created_at", "2017-08-04 11:34:36.320174"], ["updated_at", "2017-08-04 11:34:36.320174"]]
+  [1m[35m (28.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 13], ["course_id", 1], ["user_id", 3], ["submission_id", 11], ["name", "08-04.1"], ["created_at", "2017-08-04 11:34:36.354965"], ["updated_at", "2017-08-04 11:34:36.354965"]]
+  [1m[35m (15.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 14], ["course_id", 1], ["user_id", 3], ["submission_id", 12], ["name", "08-04.2"], ["created_at", "2017-08-04 11:34:36.377529"], ["updated_at", "2017-08-04 11:34:36.377529"]]
+  [1m[35m (16.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 4], ["point_id", 15], ["course_id", 1], ["user_id", 3], ["submission_id", 13], ["name", "08-04.3"], ["created_at", "2017-08-04 11:34:36.397188"], ["updated_at", "2017-08-04 11:34:36.397188"]]
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 5], ["point_id", 16], ["course_id", 1], ["user_id", 3], ["submission_id", 14], ["name", "08-05"], ["created_at", "2017-08-04 11:34:36.418356"], ["updated_at", "2017-08-04 11:34:36.418356"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 17], ["course_id", 1], ["user_id", 3], ["submission_id", 15], ["name", "08-06.1"], ["created_at", "2017-08-04 11:34:36.429312"], ["updated_at", "2017-08-04 11:34:36.429312"]]
+  [1m[35m (22.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 18], ["course_id", 1], ["user_id", 3], ["submission_id", 15], ["name", "08-06.2"], ["created_at", "2017-08-04 11:34:36.454933"], ["updated_at", "2017-08-04 11:34:36.454933"]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "points" ("exercise_id", "point_id", "course_id", "user_id", "submission_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["exercise_id", 6], ["point_id", 19], ["course_id", 1], ["user_id", 3], ["submission_id", 15], ["name", "08-06.3"], ["created_at", "2017-08-04 11:34:36.472130"], ["updated_at", "2017-08-04 11:34:36.472130"]]
+  [1m[35m (21.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/points" for 127.0.0.1 at 2017-08-04 14:34:39 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PointsController#index as HTML
+  [1m[36mPoint Load (0.4ms)[0m  [1m[34mSELECT "points".* FROM "points"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.52ms)
+Completed 200 OK in 30ms (Views: 24.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/points" for 127.0.0.1 at 2017-08-04 14:40:56 +0300
+Started GET "/points" for 127.0.0.1 at 2017-08-04 14:41:09 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PointsController#index as HTML
+  [1m[36mPoint Load (0.2ms)[0m  [1m[34mSELECT  "points".* FROM "points" WHERE "points"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered PointSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 200 OK in 24ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/points_all" for 127.0.0.1 at 2017-08-04 14:41:22 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/points_all"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/points" for 127.0.0.1 at 2017-08-04 14:41:42 +0300
+Processing by PointsController#index as HTML
+  [1m[36mPoint Load (0.5ms)[0m  [1m[34mSELECT  "points".* FROM "points" WHERE "points"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered PointSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/points" for 127.0.0.1 at 2017-08-04 14:47:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PointsController#index as HTML
+  [1m[36mPoint Load (0.2ms)[0m  [1m[34mSELECT  "points".* FROM "points" WHERE "points"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered PointSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 200 OK in 20ms (Views: 8.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v8/courses/:course_id/users/:user_id/skills" for 127.0.0.1 at 2017-08-04 14:48:16 +0300
+Processing by SkillsController#index as HTML
+  Parameters: {"course_id"=>":course_id", "user_id"=>":user_id"}
+No serializer found for resource: {:label=>"for", :user=>50, :average=>60}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.32ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v8/courses/:course_id/points" for 127.0.0.1 at 2017-08-04 14:48:33 +0300
+Processing by PointsController#index as HTML
+  Parameters: {"course_id"=>":course_id"}
+  [1m[36mPoint Load (0.1ms)[0m  [1m[34mSELECT  "points".* FROM "points" WHERE "points"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered PointSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/v8/courses/:course_id/points" for 127.0.0.1 at 2017-08-04 14:49:35 +0300
+Processing by PointsController#index as HTML
+  Parameters: {"course_id"=>":course_id"}
+  [1m[36mPoint Load (0.2ms)[0m  [1m[34mSELECT "points".* FROM "points" WHERE "points"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.14ms)
+Completed 200 OK in 18ms (Views: 13.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v8/points" for 127.0.0.1 at 2017-08-04 14:50:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v8/points"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v8/courses/:course_id/points" for 127.0.0.1 at 2017-08-04 14:50:41 +0300
+Processing by PointsController#index as HTML
+  Parameters: {"course_id"=>":course_id"}
+  [1m[36mPoint Load (0.3ms)[0m  [1m[34mSELECT "points".* FROM "points" WHERE "points"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.0ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v8/courses/:course_id/points" for 127.0.0.1 at 2017-08-04 14:50:51 +0300
+Processing by PointsController#points_all as HTML
+  Parameters: {"course_id"=>":course_id"}
+  [1m[36mPoint Load (0.6ms)[0m  [1m[34mSELECT "points".* FROM "points"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.36ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v8/courses/3/users/2/points" for 127.0.0.1 at 2017-08-04 14:51:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v8/courses/3/users/2/points"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v8/courses/:course_id/users/user_id/points" for 127.0.0.1 at 2017-08-04 14:51:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v8/courses/:course_id/users/user_id/points"):
+  
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v8/courses/:course_id/users/user_id/points" for 127.0.0.1 at 2017-08-04 14:53:23 +0300
+Processing by PointsController#index as HTML
+  Parameters: {"course_id"=>":course_id", "user_id"=>"user_id"}
+  [1m[36mPoint Load (0.2ms)[0m  [1m[34mSELECT "points".* FROM "points" WHERE "points"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.39ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v8/courses/:course_id/users/2/points" for 127.0.0.1 at 2017-08-04 14:53:28 +0300
+Processing by PointsController#index as HTML
+  Parameters: {"course_id"=>":course_id", "user_id"=>"2"}
+  [1m[36mPoint Load (0.2ms)[0m  [1m[34mSELECT "points".* FROM "points" WHERE "points"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.76ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v8/courses/1/users/2/points" for 127.0.0.1 at 2017-08-04 14:53:33 +0300
+Processing by PointsController#index as HTML
+  Parameters: {"course_id"=>"1", "user_id"=>"2"}
+  [1m[36mPoint Load (0.3ms)[0m  [1m[34mSELECT "points".* FROM "points" WHERE "points"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.28ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+

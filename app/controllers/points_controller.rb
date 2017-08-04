@@ -2,7 +2,7 @@ class PointsController < ApplicationController
   before_action :set_point, only: [:show, :update, :destroy]
 
   # GET /points
-  def index
+  def points_all
     @points = Point.all
 
     render json: @points
@@ -11,6 +11,12 @@ class PointsController < ApplicationController
   # GET /points/1
   def show
     render json: @point
+  end
+
+  def index
+    @oneUserPoints = Point.where(user_id: 1)
+
+    render json: @oneUserPoints
   end
 
   # POST /points
