@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170803094423) do
 
-  create_table "points", :id => false, force: :cascade do |t|
+  create_table "points", force: :cascade do |t|
     t.integer  "exercise_id"
     t.integer  "point_id"
     t.integer  "course_id"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20170803094423) do
     t.datetime "updated_at",    null: false
   end
 
-  create_table "submissions", :id => false, force: :cascade do |t|
+  create_table "submissions", force: :cascade do |t|
     t.integer  "user_id"
     t.text     "pretest_error"
     t.datetime "created_at",                     null: false
