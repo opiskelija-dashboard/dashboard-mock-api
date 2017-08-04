@@ -6,7 +6,7 @@
 #   movies: Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Submission.create(submission_id: 1, user_id: 35653, created_at: "2017-07-20T10:29:01.400+03:00",
+Submission.create(id: 1, user_id: 35653, created_at: "2017-07-20T10:29:01.400+03:00",
   exercise_name: "osa08-Osa08_08.TavaroitaJaLaatikoita", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-01.1 08-01.2 08-01.3", processing_tried_at: "2017-07-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -21,7 +21,7 @@ Point.create(exercise_id: 1, point_id: 2, course_id: 1, user_id: 1, submission_i
 
 Point.create(exercise_id: 1, point_id: 3, course_id: 1, user_id: 1, submission_id: 1, name: "08-01.3")
 
-Submission.create(submission_id: 2, user_id: 15653, created_at: "2017-07-21T10:29:01.400+03:00",
+Submission.create(id: 2, user_id: 15653, created_at: "2017-07-21T10:29:01.400+03:00",
   exercise_name: "osa333", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-01.4", processing_tried_at: "2017-07-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -32,7 +32,7 @@ Submission.create(submission_id: 2, user_id: 15653, created_at: "2017-07-21T10:2
 
 Point.create(exercise_id: 1, point_id: 4, course_id: 1, user_id: 1, submission_id: 2, name: "08-01.4")
 
-Submission.create(submission_id: 3, user_id: 15653, created_at: "2017-07-22T10:29:01.400+03:00",
+Submission.create(id: 3, user_id: 15653, created_at: "2017-07-22T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-01.5", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -43,7 +43,7 @@ Submission.create(submission_id: 3, user_id: 15653, created_at: "2017-07-22T10:2
 
 Point.create(exercise_id: 1, point_id: 5, course_id: 1, user_id: 1, submission_id: 3, name: "08-01.5") 
 
-Submission.create(submission_id: 4, user_id: 15653, created_at: "2017-07-23T10:29:01.400+03:00",
+Submission.create(id: 4, user_id: 15653, created_at: "2017-07-23T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-02.1", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -54,7 +54,7 @@ Submission.create(submission_id: 4, user_id: 15653, created_at: "2017-07-23T10:2
 
 Point.create(exercise_id: 2, point_id: 6, course_id: 1, user_id: 1, submission_id: 4, name: "08-02.1")
 
-Submission.create(submission_id: 5, user_id: 15653, created_at: "2017-07-25T10:29:01.400+03:00",
+Submission.create(id: 5, user_id: 15653, created_at: "2017-07-25T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-02.2", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -65,7 +65,7 @@ Submission.create(submission_id: 5, user_id: 15653, created_at: "2017-07-25T10:2
 
 Point.create(exercise_id: 2, point_id: 7, course_id: 1, user_id: 1, submission_id: 5, name: "08-02.2")  
 
-Submission.create(submission_id: 6, user_id: 15653, created_at: "2017-07-24T10:29:01.400+03:00",
+Submission.create(id: 6, user_id: 15653, created_at: "2017-07-24T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-02.3", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -76,7 +76,7 @@ Submission.create(submission_id: 6, user_id: 15653, created_at: "2017-07-24T10:2
 
 Point.create(exercise_id: 2, point_id: 8, course_id: 1, user_id: 1, submission_id: 6, name: "08-02.3") 
 
-Submission.create(submission_id: 7, user_id: 15653, created_at: "2017-07-28T10:29:01.400+03:00",
+Submission.create(id: 7, user_id: 15653, created_at: "2017-07-28T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-02.4", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -87,7 +87,7 @@ Submission.create(submission_id: 7, user_id: 15653, created_at: "2017-07-28T10:2
 
 Point.create(exercise_id: 2, point_id: 9, course_id: 1, user_id: 1, submission_id: 7, name: "08-02.4")
 
-Submission.create(submission_id: 8, user_id: 15653, created_at: "2017-07-29T10:29:01.400+03:00",
+Submission.create(id: 8, user_id: 15653, created_at: "2017-07-29T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-03.1", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -98,7 +98,7 @@ Submission.create(submission_id: 8, user_id: 15653, created_at: "2017-07-29T10:2
 
 Point.create(exercise_id: 3, point_id: 10, course_id: 1, user_id: 1, submission_id: 8, name: "08-03.1")
 
-Submission.create(submission_id: 9, user_id: 15653, created_at: "2017-08-01T10:29:01.400+03:00",
+Submission.create(id: 9, user_id: 15653, created_at: "2017-08-01T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-03.2", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -109,7 +109,7 @@ Submission.create(submission_id: 9, user_id: 15653, created_at: "2017-08-01T10:2
 
 Point.create(exercise_id: 3, point_id: 11, course_id: 1, user_id: 1, submission_id: 9, name: "08-03.2")
 
-Submission.create(submission_id: 10, user_id: 15653, created_at: "2017-08-01T10:29:01.400+03:00",
+Submission.create(id: 10, user_id: 15653, created_at: "2017-08-01T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-03.3", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -120,7 +120,7 @@ Submission.create(submission_id: 10, user_id: 15653, created_at: "2017-08-01T10:
 
 Point.create(exercise_id: 3, point_id: 12, course_id: 1, user_id: 1, submission_id: 10, name: "08-03.3")
 
-Submission.create(submission_id: 11, user_id: 15653, created_at: "2017-08-01T10:29:01.400+03:00",
+Submission.create(id: 11, user_id: 15653, created_at: "2017-08-01T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-04.1", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -131,7 +131,7 @@ Submission.create(submission_id: 11, user_id: 15653, created_at: "2017-08-01T10:
 
 Point.create(exercise_id: 4, point_id: 13, course_id: 1, user_id: 1, submission_id: 11, name: "08-04.1")
 
-Submission.create(submission_id: 12, user_id: 15653, created_at: "2017-08-05T10:29:01.400+03:00",
+Submission.create(id: 12, user_id: 15653, created_at: "2017-08-05T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-04.2", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -142,7 +142,7 @@ Submission.create(submission_id: 12, user_id: 15653, created_at: "2017-08-05T10:
 
 Point.create(exercise_id: 4, point_id: 14, course_id: 1, user_id: 1, submission_id: 12, name: "08-04.2")
 
-Submission.create(submission_id: 13, user_id: 15653, created_at: "2017-08-08T10:29:01.400+03:00",
+Submission.create(id: 13, user_id: 15653, created_at: "2017-08-08T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-04.3", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -153,7 +153,7 @@ Submission.create(submission_id: 13, user_id: 15653, created_at: "2017-08-08T10:
 
 Point.create(exercise_id: 4, point_id: 15, course_id: 1, user_id: 1, submission_id: 13, name: "08-04.3")
 
-Submission.create(submission_id: 14, user_id: 15653, created_at: "2017-08-10T10:29:01.400+03:00",
+Submission.create(id: 14, user_id: 15653, created_at: "2017-08-10T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-05", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
@@ -164,7 +164,7 @@ Submission.create(submission_id: 14, user_id: 15653, created_at: "2017-08-10T10:
 
 Point.create(exercise_id: 5, point_id: 16, course_id: 1, user_id: 1, submission_id: 14, name: "08-05")
 
-Submission.create(submission_id: 15, user_id: 15653, created_at: "2017-08-11T10:29:01.400+03:00",
+Submission.create(id: 15, user_id: 15653, created_at: "2017-08-11T10:29:01.400+03:00",
   exercise_name: "osa999", course_id: "214", processed: true, 
   all_tests_passed: true, points: "08-06.1 08-06.2 08-06.3", processing_tried_at: "2017-09-20T10:29:01.437+03:00",
   processing_began_at: "2017-07-20T10:29:02.754+03:00", processing_completed_at: "2017-07-20T10:29:17.364+03:00",
