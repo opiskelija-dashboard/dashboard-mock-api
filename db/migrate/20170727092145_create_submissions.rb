@@ -1,6 +1,6 @@
 class CreateSubmissions < ActiveRecord::Migration[5.0]
   def change
-    create_table :submissions do |t|
+    create_table :submissions, :id => false do |t|
       t.integer  :id
       t.integer  :user_id
       t.text     :pretest_error
